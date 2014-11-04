@@ -1,0 +1,29 @@
+{
+  "name": "mixyjade",
+  "version": "0.5.0",
+  "homepage": "https://github.com/sinsunsan/mixy.jade",
+  "main": "./mixins.jade",
+  "authors": [
+    "Sébastien Lucas"
+  ],
+  "description": "Mixy.jade is a library of jade mixins",
+  "keywords": [
+    "jade",
+    "utilies",
+    "library"
+  ],
+  "licence": "MIT",
+  "ignore": [],
+  "dependencies": {},
+  "devDependencies": {},
+  "_release": "0.5.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.5.0",
+    "commit": "d4ae4adaeb1939ec2756eb8bb8d71613c0ce4e7a"
+  },
+  "_source": "git://github.com/sinsunsan/mixy.jade.git",
+  "_target": "~0.5.0",
+  "_originalSource": "mixyjade",
+  "_direct": true
+}
