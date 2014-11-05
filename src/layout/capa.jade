@@ -39,15 +39,17 @@ html(lang='es').no-js
         - var items = ['lago titicaca', 'ticket de bus', 'tours privados', 'turismo vivencial']
         ul.lista
           for item in items         
-            li.item
+            li.item 
               a(href="#{item.replace(/\s/g,'-')}.html", title=item)= item
           
     block contenido
       
-    footer#fotter
+    footer#footer
       ul.footerLista
         li: a Hospedaje
         li: a Formas de Pago
         li: a Catalogo de Puno
         li: a Datos utiles
+        li: a Nosotros
+        li: a Contacto
     
