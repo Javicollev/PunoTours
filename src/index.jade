@@ -18,3 +18,19 @@ block contenido
 			ul: li(data-background='img/flicker-4.jpg')
 				.flick-title title 4
 				.lick-sub-text Text line 4
+		//article donde irán las promociones...
+		article#promos
+			h2.titulos Promociones
+			mixin caja(titulo,srcImagen, href)
+				figure.imagen
+					img(src=srcImagen, alt=titulo)
+					figcaption=titulo
+				a(href=href) Ver más
+			+caja('Los Uros', 'img/los-uros.jpg', 'los-uros.html')
+			+caja('Isla de Amantaní', 'img/amantani.jpg', 'amantani.html')
+		article#queVisitar
+			h2.titulos Qué Visitar'
+			+caja('Los Uros', 'img/los-uros.jpg', 'los-uros.html')
+			+caja('Los Uros', 'img/los-uros.jpg', 'los-uros.html')
+			
+			
