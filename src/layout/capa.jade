@@ -6,63 +6,38 @@ html(lang='es').no-js
     block title
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-    
     link(rel='icon', type='image/x-icon', href='img/favicon.icon')
-      
-    //- link(rel='apple-touch-icon-precomposed', sizes='144x144' href='i/icons/apple-touch-icon-144x144-precomposed.png')
-    //- link(rel='apple-touch-icon-precomposed', sizes='114x114' href='i/icons/apple-touch-icon-114x114-precomposed.png')
-    //- link(rel='apple-touch-icon-precomposed', sizes='72x72' href='i/icons/apple-touch-icon-72x72-precomposed.png')
-    //- link(rel='apple-touch-icon-precomposed', href='i/icons/apple-touch-icon-precomposed.png')
-
-    //- Tile icon for Win8 (144x144 + tile color)
-    //- meta(name='msapplication-TileImage', content='i/icons/ms-touch-icon-144x144-precomposed.png')
-    //- meta(name='msapplication-TileColor', content='#3372DF')
-
-    //- Chrome Add to Homescreen
-    //- link(rel='shortcut icon', sizes='196x196', href='i/icons/touch-icon-196x196.png')
-
-    //- For iOS web apps. Delete if not needed.
-    //- meta(name='apple-mobile-web-app-capable', content='yes')
-    //- meta(name='apple-mobile-web-app-status-bar-style', content='black')
-    //- meta(name='apple-mobile-web-app-title', content='')
-
-
     link(rel='stylesheet', href='css/app.css')
     script(src='js/librerias/modernizr2.8.3.js')
-    
   body
     header#header
       button.menu
-      h1#logo 
-        img
-          span puno tours
+      h1#logo
+        img(src='img/flicker-1.jpg', alt='logo')
+        span titulo
       nav#nav
         - var items = ['lago titicaca', 'ticket de bus', 'tours privados', 'turismo vivencial']
         ul.lista
-          for item in items         
-            li.item 
+          for item in items
+            li.item
               a(href="#{item.replace(/\s/g,'-')}.html", title=item)= item
-          
+
     block contenido
-      
+
     footer#footer
       ul.footerLista
         li: a Hospedaje
         li: a Formas de Pago
         li: a Catalogo de Puno
         li: a Datos utiles
-<<<<<<< Updated upstream
         li: a Nosotros
         li: a Contacto
-=======
 
       ul.redes-sociales
-        li: a(haref="#") facebook
-        li: a(haref="#") tuiwtter
-        li: a(haref="#") youtube
+        li: a(haref='#') facebook
+        li: a(haref='#') tuiwtter
+        li: a(haref='#') youtube
 
     block scripts
       script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
       script(src="src/js/script.js")
->>>>>>> Stashed changes
-    
