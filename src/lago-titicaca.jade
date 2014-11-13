@@ -1,0 +1,17 @@
+extends layout/capa.jade
+block title
+	title Puno Tours - viajes, excursiones y tours en el lago titicaca
+block contenido
+	section
+		h1.titulo Tours en el Lago Titicaca
+		h2.titulos Encuentra tu destino
+		form.busqueda
+			input(type='text' name='lugar' placeholder='¿Qué lugar quiere conocer?')
+			input(type='date' name='fecha' placeholder='Fecha de viaje')
+			input(type='submit' value='Buscar Tour')
+		article.tours
+			img.imagen-tour(src='img/imagen-tour.jpg')
+			h3.nombre-tour Nombre del tour
+			span.duracion Duración
+			span.destino Lugar
+			span.precio Precio
